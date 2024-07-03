@@ -15,7 +15,7 @@ class RunScriptOnChangeHandler(FileSystemEventHandler):
 
 
 if __name__ == "__main__":
-    script_to_watch = 'sitka_highs.py'
+    script_to_watch = 'death_valley_highs_lows.py'
     event_handler = RunScriptOnChangeHandler(script_to_watch)
     observer = Observer()
     observer.schedule(event_handler, path='.', recursive=False)
